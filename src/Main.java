@@ -11,7 +11,7 @@ public class Main {
         HashSemColisao tabelaHash = new HashSemColisao(50);
         while (true) {
             int opc = Integer.parseInt(
-                    JOptionPane.showInputDialog("Menu\n1-Adicionar aluno\n2-Consultar matricula\n3-delete um elemento\n4-Imprima a matriz"));
+                    JOptionPane.showInputDialog("Menu\n1-Adicionar aluno\n2-Consultar matricula\n3-delete um elemento\n4-Imprima a matriz\n5-Sair"));
             switch (opc) {
                 case 1:
                     String nome = JOptionPane.showInputDialog("Digite o nome do aluno: ");
@@ -29,6 +29,8 @@ public class Main {
                 case 4:
                     tabelaHash.printHash();
                     break;
+                case 5:
+                    System.exit(0);
                 default:
                     JOptionPane.showMessageDialog(null, "Opção Invalida");
             }
