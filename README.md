@@ -27,18 +27,28 @@ As propriedades fundamentais são:
 * Funções de hash: A escolha de uma boa função de hash é fundamental para o desempenho de uma tabela hash. A função de hash deve distribuir as chaves de maneira uniforme e minimizar colisões.
 
 ## Com colisão
-Este repositório contém uma implementação do algoritmo Flood Fill utilizando 3 classes: <br>
+Este repositório contém uma implementação do algoritmo Flood Fill utilizando <br>
 
-### ArvoreBinariaBusca 
-Esta classe Java, chamada `ArvoreBinariaBusca`, implementa uma árvore binária de busca. Ela permite inserir, buscar e remover valores na árvore. Também oferece a capacidade de imprimir a árvore em formato de árvore binária.
+### HashSemColisao 
+É definida uma classe chamada "HashSemColisao" que implementa uma interface chamada "HashSemColisaoInterface".
 <br>
 
-Para usar esta árvore:<br>
-- Crie uma instância da classe `ArvoreBinariaBusca`.<br>
-- Use o método `inserir` para adicionar valores à árvore.<br>
-- Use o método `buscar` para verificar se um valor existe na árvore.<br>
-- Use o método `remover` para remover um valor da árvore.<br>
-- Use o método `imprimirArvore` para visualizar a árvore em formato de árvore binária.<br>
+Nesse programa tem: 
+- Há uma função chamada "funcaoHash" que calcula o índice na tabela hash com base na matrícula de um aluno. Esta função é usada para determinar onde um aluno será armazenado na tabela.<br>
+- O método "insere" é usado para adicionar um aluno na tabela. Antes de fazer isso, ele calcula o índice usando a função de hash e verifica se já existe um aluno com a mesma matrícula na posição da tabela. Se houver uma colisão (ou seja, outro aluno com a mesma matrícula já está lá), uma mensagem de aviso é impressa, caso contrário, o aluno é adicionado à lista encadeada na posição correta.<br>
+- O método "busca" deve ser implementado para procurar um aluno na tabela hash, mas no código fornecido, a implementação está vazia.<br>
+- O método "deleta" deve ser usado para excluir um aluno da tabela, mas também está vazio no código fornecido.<br>
+- O método "printHash" é usado para imprimir o conteúdo da tabela hash na tela.<br>
+### Sem colisão
+É definida uma classe chamada "HashSemColisao" que implementa uma interface chamada "HashSemColisaoInterface".
+<br>
+
+Nesse programa tem: 
+- Há uma função chamada "funcaoHash" que calcula o índice na tabela hash com base na matrícula de um aluno. Esta função é usada para determinar onde um aluno será armazenado na tabela.<br>
+- O método "insere" é usado para adicionar um aluno na tabela. Antes de fazer isso, ele calcula o índice usando a função de hash e verifica se já existe um aluno com a mesma matrícula na posição da tabela. Se houver uma colisão (ou seja, outro aluno com a mesma matrícula já está lá), uma mensagem de aviso é impressa, caso contrário, o aluno é adicionado à lista encadeada na posição correta.<br>
+- O método "busca" deve ser implementado para procurar um aluno na tabela hash, mas no código fornecido, a implementação está vazia.<br>
+- O método "deleta" deve ser usado para excluir um aluno da tabela, mas também está vazio no código fornecido.<br>
+- O método "printHash" é usado para imprimir o conteúdo da tabela hash na tela.<br>
 ### Main
 Este é um programa Java que interage com uma árvore binária de busca. Os principais recursos são: <br>
 
