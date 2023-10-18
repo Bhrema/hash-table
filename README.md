@@ -46,14 +46,8 @@ Nesse programa tem:
 Nesse programa tem: <br>
 A classe `HashComColisao` é uma extensão da classe `HashSemColisao` e implementa uma tabela hash que lida com colisões de matrículas de alunos. Ela oferece métodos para buscar, inserir e excluir alunos na tabela hash. Quando ocorrem colisões, a classe gera novas matrículas para resolver conflitos e garantir que não haja duplicações de matrículas na tabela. Em resumo, a classe aprimora a funcionalidade da tabela hash, garantindo que os alunos sejam gerenciados efetivamente, mesmo quando as matrículas são idênticas. <br>
 ## Main
-Este é um programa Java que interage com uma árvore binária de busca. Os principais recursos são: <br>
+O programa Java oferece um menu interativo que permite aos usuários alternar entre tabelas hash com ou sem colisões e executar ações relacionadas a alunos, como adicionar, consultar, deletar e visualizar informações. As tabelas hash são usadas para gerenciar dados de alunos. Os usuários podem escolher entre opções de menu para executar essas ações com base em suas preferências. <br>
 
-- **Inserções:** O usuário pode inserir números na árvore, com exibição da árvore após cada inserção.<br>
-- **Buscas:** Permite ao usuário buscar números na árvore e informa se o número foi encontrado.<br>
-- **Remoções:** Possibilita a remoção de números da árvore, com exibição da árvore após cada remoção.  <br>
- ### Node
-A classe `Node`, que representa os nós da árvore, deve ser definida externamente com pelo menos três atributos: `dado` (valor do nó), `esquerda` (referência para o filho esquerdo) e `direita` (referência para o filho direito). Essa classe é essencial para a estrutura da árvore.
-<br>
 
 ## Funcionamento do projeto 
 ### Inserções: <br>
