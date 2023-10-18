@@ -39,9 +39,23 @@ public class HashSemColisao implements HashSemColisaoInterface {
     }
 
     @Override
-    public void busca(Aluno aluno) {
+    public Aluno busca(int matricula) {
+        int pos = funcaoHash(new Aluno(matricula, ""));
+        int iteracao = 0;
 
+        if (tabela[pos] != null) {
+            LinkedList<Aluno> listaAlunos = tabela[pos];
+            for (Aluno aluno : listaAlunos) {
+                iteracao++;
+                if (aluno.getMatricula() == matricula) {
+                    return aluno;
+                }
+            }
+        }
+        return null;
     }
+
+
 
     @Override
     public boolean deleta(int matricula) {

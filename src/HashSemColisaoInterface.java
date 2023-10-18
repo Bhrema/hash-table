@@ -1,6 +1,6 @@
 public interface HashSemColisaoInterface {
     int funcaoHash(Aluno aluno);
     void insere(Aluno aluno);
-    void busca(Aluno aluno);
+    Aluno busca(int matricula);
     boolean deleta(int matricula);
 }

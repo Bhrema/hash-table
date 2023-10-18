@@ -29,10 +29,11 @@ public class Main {
                 case 3:
                     int busca = Integer.parseInt(JOptionPane.showInputDialog("Digite matricula para buscar: "));
                     Aluno alunoBusca = new Aluno(busca);
+                    Aluno boolBusca = tabelaHashSemColisao.busca(alunoBusca.getMatricula());
                     if (usarColisoes) {
                         tabelaHashComColisao.busca(alunoBusca);
                     } else {
-                        tabelaHashSemColisao.busca(alunoBusca);
+                        System.out.println("O aluno "+ boolBusca.getNome() + " foi encontrado");
                     }
                     break;
                 case 4:
