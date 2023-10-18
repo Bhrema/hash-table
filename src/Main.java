@@ -2,7 +2,7 @@ import java.io.IOException;
 import javax.swing.JOptionPane;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         boolean usarColisoes = true;  // Variável para controlar se deve usar colisões
         HashSemColisao tabelaHashSemColisao = new HashSemColisao(50);
         HashComColisao tabelaHashComColisao = new HashComColisao(50);
@@ -38,10 +38,15 @@ public class Main {
                 case 4:
                     int deleta = Integer.parseInt(JOptionPane.showInputDialog("Digite matricula para deletar: "));
                     Aluno alunoDeleta = new Aluno(deleta);
+                    boolean boolDelete = tabelaHashSemColisao.deleta(alunoDeleta.getMatricula());
                     if (usarColisoes) {
                         tabelaHashComColisao.deleta(alunoDeleta);
                     } else {
-                        tabelaHashSemColisao.deleta(alunoDeleta);
+                        if(boolDelete){
+                            System.out.println("O aluno foi retirado do sistema");
+                        }else{
+                            System.out.println("Aluno não encontrado");
+                        }
                     }
                     break;
                 case 5:

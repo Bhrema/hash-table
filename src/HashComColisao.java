@@ -1,9 +1,18 @@
 import java.util.LinkedList;
 
-public class HashComColisao extends HashSemColisao {
+public class HashComColisao implements HashComColisaoInterface {
+    public int maxItens, maxPosicoes, quantidadeItens;
+    public LinkedList<Aluno>[] tabela;
+
+    @Override
+    public int funcaoHash(Aluno aluno) {
+        return aluno.getMatricula() % maxPosicoes;
+    }
 
     public HashComColisao(int maxPosicoes) {
-        super(maxPosicoes);
+        this.maxPosicoes = maxPosicoes;
+        this.tabela = new LinkedList[maxPosicoes];
+        this.quantidadeItens = 0;
     }
 
     @Override
@@ -112,5 +121,17 @@ public class HashComColisao extends HashSemColisao {
             }
         }
         return false;
+    }
+
+    public void printHash() {
+        for (int i = 0; i < maxPosicoes; i++) {
+            LinkedList<Aluno> listaAlunos = tabela[i];
+            if (listaAlunos != null) {
+                System.out.println("Posição " + i + ":");
+                for (Aluno aluno : listaAlunos) {
+                    System.out.println(aluno.getMatricula() + " - " + aluno.getNome());
+                }
+            }
+        }
     }
 }

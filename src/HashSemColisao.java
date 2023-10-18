@@ -44,27 +44,27 @@ public class HashSemColisao implements HashSemColisaoInterface {
     }
 
     @Override
-    public void deleta(Aluno aluno) {
-        int local = funcaoHash(aluno);
+    public boolean deleta(int matricula) {
+        int pos = funcaoHash(new Aluno(matricula, "" ));
+        if (tabela[pos] != null) {
+            LinkedList<Aluno> listaAlunos = tabela[pos];
+            for (Aluno aluno : listaAlunos) {
+                if (aluno.getMatricula() == matricula) {
+                    listaAlunos.remove(aluno);
+                    return true;
+                }
+            }
+        }
+        return false;
     }
+
+
 
     public int getTamanho(){
         return quantidadeItens;
     }
 
-    public void printHash() throws IOException {
-        try{
-            final String os = System.getProperty("os.name");
-
-            if (os.contains("Windows")){
-                Runtime.getRuntime().exec("cls");
-            }
-            else{
-                Runtime.getRuntime().exec("clear");
-            }
-        }
-        catch (final Exception e){
-        }
+    public void printHash() {
         for (int i = 0; i < maxPosicoes; i++) {
             LinkedList<Aluno> listaAlunos = tabela[i];
             if (listaAlunos != null) {
