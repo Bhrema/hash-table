@@ -29,13 +29,13 @@ public class HashSemColisao implements HashSemColisaoInterface {
 
         for (Aluno c : listaAlunos) {
             if (c.getMatricula() == idCliente) {
-                System.out.println("Cliente já existe na tabela.");
+                System.out.println("Aluno já existe na tabela.");
                 return;
             }
         }
 
         listaAlunos.add(aluno);
-        System.out.println("Cliente inserido com sucesso!");
+        System.out.println("Aluno inserido com sucesso!");
     }
 
     @Override
