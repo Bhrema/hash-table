@@ -32,7 +32,28 @@ public class HashComColisao extends HashSemColisao {
     }
 
     private int gerarNovaMatricula(int matriculaExistente) {
-        // Gere uma nova matrícula com base na matrícula existente (pode ser uma lógica simples)
-        return matriculaExistente + 1;
+        int novaMatricula = matriculaExistente;
+        int tentativas = 1;
+    
+        // Enquanto a nova matrícula já existir na tabela, continue gerando uma nova
+        while (matriculaJaExiste(novaMatricula)) {
+            novaMatricula = matriculaExistente + tentativas;
+            tentativas++;
+        }
+    
+        return novaMatricula;
+    }
+    
+    private boolean matriculaJaExiste(int matricula) {
+        for (LinkedList<Aluno> listaAlunos : tabela) {
+            if (listaAlunos != null) {
+                for (Aluno aluno : listaAlunos) {
+                    if (aluno.getMatricula() == matricula) {
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
     }
 }
