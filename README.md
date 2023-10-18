@@ -48,30 +48,6 @@ A classe `HashComColisao` é uma extensão da classe `HashSemColisao` e implemen
 ## Main
 O programa Java oferece um menu interativo que permite aos usuários alternar entre tabelas hash com ou sem colisões e executar ações relacionadas a alunos, como adicionar, consultar, deletar e visualizar informações. As tabelas hash são usadas para gerenciar dados de alunos. Os usuários podem escolher entre opções de menu para executar essas ações com base em suas preferências. <br>
 
-
-## Funcionamento do projeto 
-### Inserções: <br>
--O programa permite a inserção de números em uma árvore binária de busca.<br>
--O usuário é solicitado a digitar um número para inserção.<br>
--Após cada inserção, a árvore é exibida em formato de árvore binária para visualização.<br>
--Para encerrar a inserção, o usuário digita 'q'.<br>
-### Buscas: <br>
--Após a fase de inserção, o programa entra na fase de busca.<br>
--O usuário pode digitar um número para verificar se ele está presente na árvore.<br>
--O programa informa se o número foi encontrado na árvore.<br>
-### Remoções:<br>
--O programa permite a remoção de números da árvore.<br>
--O usuário é solicitado a digitar um número a ser removido.<br>
--Após cada remoção, a árvore é exibida em formato de árvore binária para visualização.<br>
--O programa informa se o número foi removido com sucesso.<br>
--Para encerrar a remoção, o usuário digita 'q'.<br>
-### Encerramento do Programa:<br>
--O usuário pode repetir os passos de inserção, busca e remoção conforme necessário.<br>
--Para encerrar o programa completamente, o usuário pode digitar 'q' em qualquer ponto do processo.<br>
-![image](https://github.com/BES-Noite/PJBL2-ArvoreBinariaDeBusca/assets/91105011/db43740b-4107-4b35-9668-44b082f3a36a)
-![image](https://github.com/BES-Noite/PJBL2-ArvoreBinariaDeBusca/assets/91105011/071bbe23-f509-4a60-8e58-70c761f25c7b)
-![image](https://github.com/BES-Noite/PJBL2-ArvoreBinariaDeBusca/assets/91105011/cc22b934-403b-4af0-89d7-62dba6c04ea7) <br>
-
 ## Uso 
 Para utilizar o projeto, siga os passos abaixo:
 
