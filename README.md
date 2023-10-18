@@ -1,4 +1,4 @@
-# Tabela Hash 
+# PJBL 3
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
@@ -19,14 +19,14 @@
 
 Uma tabela hash, ou tabela de dispersão, é uma estrutura de dados que usa uma função de hash para mapear chaves a valores, permitindo a recuperação eficiente de valores com base nas chaves. Ela é eficiente, consome menos memória, lida com colisões e é amplamente usada em programação para armazenar e acessar dados rapidamente.
 
-A propriedade fundamental é a seguinte:
+As propriedades fundamentais são: 
 
 * Eficiência: Uma boa função de hash e um dimensionamento apropriado da tabela podem levar a operações de busca e inserção de dados extremamente rápidas, com tempo médio de acesso constante.
 * Uso de memória: As tabelas hash podem consumir menos memória do que outras estruturas de dados, tornando-as adequadas para armazenar grandes quantidades de dados.
 * Manipulação de colisões: Colisões ocorrem quando duas chaves diferentes produzem o mesmo índice de tabela. As tabelas hash devem incluir mecanismos para lidar com colisões, como encadear os valores associados às mesmas chaves ou usar técnicas avançadas de resolução de colisões.
 * Funções de hash: A escolha de uma boa função de hash é fundamental para o desempenho de uma tabela hash. A função de hash deve distribuir as chaves de maneira uniforme e minimizar colisões.
 
-## Algoritmo Árvore Binária
+## Com colisão
 Este repositório contém uma implementação do algoritmo Flood Fill utilizando 3 classes: <br>
 
 ### ArvoreBinariaBusca 
