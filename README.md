@@ -39,16 +39,12 @@ Nesse programa tem:
 - O método "busca" deve ser implementado para procurar um aluno na tabela hash, mas no código fornecido, a implementação está vazia.<br>
 - O método "deleta" deve ser usado para excluir um aluno da tabela, mas também está vazio no código fornecido.<br>
 - O método "printHash" é usado para imprimir o conteúdo da tabela hash na tela.<br>
-### Sem colisão
+## Sem colisão
 É definida uma classe chamada "HashSemColisao" que implementa uma interface chamada "HashSemColisaoInterface".
 <br>
 
-Nesse programa tem: 
-- Há uma função chamada "funcaoHash" que calcula o índice na tabela hash com base na matrícula de um aluno. Esta função é usada para determinar onde um aluno será armazenado na tabela.<br>
-- O método "insere" é usado para adicionar um aluno na tabela. Antes de fazer isso, ele calcula o índice usando a função de hash e verifica se já existe um aluno com a mesma matrícula na posição da tabela. Se houver uma colisão (ou seja, outro aluno com a mesma matrícula já está lá), uma mensagem de aviso é impressa, caso contrário, o aluno é adicionado à lista encadeada na posição correta.<br>
-- O método "busca" deve ser implementado para procurar um aluno na tabela hash, mas no código fornecido, a implementação está vazia.<br>
-- O método "deleta" deve ser usado para excluir um aluno da tabela, mas também está vazio no código fornecido.<br>
-- O método "printHash" é usado para imprimir o conteúdo da tabela hash na tela.<br>
+Nesse programa tem: <br>
+A classe `HashComColisao` é uma extensão da classe `HashSemColisao` e implementa uma tabela hash que lida com colisões de matrículas de alunos. Ela oferece métodos para buscar, inserir e excluir alunos na tabela hash. Quando ocorrem colisões, a classe gera novas matrículas para resolver conflitos e garantir que não haja duplicações de matrículas na tabela. Em resumo, a classe aprimora a funcionalidade da tabela hash, garantindo que os alunos sejam gerenciados efetivamente, mesmo quando as matrículas são idênticas. <br>
 ### Main
 Este é um programa Java que interage com uma árvore binária de busca. Os principais recursos são: <br>
 
