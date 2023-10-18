@@ -48,6 +48,16 @@ A classe `HashComColisao` é uma extensão da classe `HashSemColisao` e implemen
 ## Main
 O programa Java oferece um menu interativo que permite aos usuários alternar entre tabelas hash com ou sem colisões e executar ações relacionadas a alunos, como adicionar, consultar, deletar e visualizar informações. As tabelas hash são usadas para gerenciar dados de alunos. Os usuários podem escolher entre opções de menu para executar essas ações com base em suas preferências. <br>
 
+## Imagem do Funcionamento 
+![image](https://github.com/Bhrema/hash-table/assets/91105011/b8394e4c-16c4-4465-abbb-41ef0cb29ed3)
+![image](https://github.com/Bhrema/hash-table/assets/91105011/ee616f2d-04cf-4cc9-beda-11285699a121)
+![image](https://github.com/Bhrema/hash-table/assets/91105011/55a04e8f-dcde-49e8-8290-ea798b813e89)
+![image](https://github.com/Bhrema/hash-table/assets/91105011/e310f715-44a3-455d-af8a-6e4f82c37c2a)
+
+
+
+
+
 ## Uso 
 Para utilizar o projeto, siga os passos abaixo:
 
