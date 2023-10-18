@@ -9,7 +9,6 @@ public class Aluno<T> {
 
     public Aluno(int matricula) {
         this.matricula = matricula;
-        this.nome = "Nome Padrão";
     }
 
     public int getMatricula() {
